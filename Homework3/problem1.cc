@@ -5,14 +5,14 @@
 
 
 int main(void){
-  int   b=0, n=0, m=0, l=0, i=0, j=0, k=0;
+  int   b=0, n=0, m=0, i=0;
   float a=0;
   float x [50]={};
   float y [50]={};
   float tolerance=0.0001f;
 
   //input
-  std::cout << "Enter a set of 2-d vectors in order of xi , yi. And enter exit when finished: " << std::endl;
+  std::cout << "Enter a set of 2-d vectors in the order of xi , yi. And enter exit when finished: " << std::endl;
   while (std::cin >> x[n] >> y[n]){
     n=n+1;
    }
