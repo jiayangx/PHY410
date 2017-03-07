@@ -8,7 +8,7 @@
 
 class StudentRecord {
  public:
-  StudentRecord (std::string ix=0, std::string iy=0, float iz=0. );
+  StudentRecord (std::string ix="", std::string iy="", float iz=0. );
   ~StudentRecord();
  bool input (std::istream & in);
  void print() const;
