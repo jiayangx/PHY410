@@ -75,9 +75,6 @@ int main(int argc, char * argv[]){
   }
 
 
-  //std::cout << "Sorting..." << std::endl;
-  //std::sort( records.begin(), records.end() );
-  //std::cout << "Printing..." << std::endl;
   for ( std::shared_ptr<StudentRecord> const & rec : records ) {
     rec->print( std::cout );
   }
@@ -91,22 +88,22 @@ int main(int argc, char * argv[]){
   std::cout << std::endl;
   
 
-  std::cout << "Sorted grades: " << std::endl;
-  std::cout << "physics: " << std::endl;
+  std::cout << "Sorted grades (the last figure is student's final grade): " << std::endl;
+  std::cout << "Physics class: " << std::endl;
   std::sort (physics.begin(), physics.end(), lessthan );
   for ( std::shared_ptr<StudentRecord> const & rec:physics) {
     rec->print (std::cout);
   }
   std::cout << std::endl;
 
-  std::cout << "Literature: " << std::endl;
+  std::cout << "Literature class: " << std::endl;
   std::sort (literature.begin(), literature.end(), lessthan );
   for ( std::shared_ptr<StudentRecord> const & rec:literature) {
     rec->print (std::cout);
   }
   std::cout << std::endl;
 
-  std::cout << "History: " << std::endl;
+  std::cout << "History class: " << std::endl;
   std::sort (history.begin(), history.end(), lessthan );
   for ( std::shared_ptr<StudentRecord> const & rec:history) {
     rec->print (std::cout);
